@@ -64,3 +64,76 @@ font-weight: bold;
 </table>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Forms in HTML </title>
+<style>
+body {
+background-color: lavender;
+}
+h2 {
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+input[type=text] {
+width: 80%;
+padding: 8px 16px;
+}
+input[type=button] {
+background-color: slateblue;
+padding: 16px 8px;
+cursor: pointer;
+}
+input[type=submit], input[type=reset] {
+background-color: slateblue;
+padding: 16px 32px;
+cursor: pointer;
+}
+select {
+width: 30%;
+padding 16px 16px;
+background-color: #f1f1f1;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2> TY BTech 2022-23 </h2>
+<h4> Please fill the following form: </h4>
+<form method = Post Action = "script_url">
+<br> First Name: <input type="text" name="firstname"/> <br/>
+<br> Middle Name: <input type="text" name="middlename"/> <br/>
+<br> Last Name: <input type="text" name="lastname"/> <br/>
+
+<br> <label for="email">Email: </label>
+<input type="email" id="email" name="email"/> <br/>
+
+<br> PRN: <input type="text" name="prn"/> <br/>
+
+<br> Address: <br/>
+<textarea row=20 cols=10>
+</textarea> <br/>
+
+<br> <label for="gender">Gender: </label>
+<input type="radio" id="gender" name="gender" value="male" /> Male
+<input type="radio" id="gender" name="gender" value="female" /> Female
+<input type="radio" id="gender" name="gender" value="rather not say" /> Rather not say <br/>
+
+<br> <label for="subject"> Choose your favourite subject: </label>
+<select name="subjects" id="subjects">
+<option value="full stack development"> Full Stack Development </option>
+<option value="database management systems"> Database Management Systems </option>
+<option value="artificial intelligence"> Artificial Intelligence </option>
+<option value="cybersecurity"> Cybersecurity </option>
+</select> <br/>
+
+<br> <input type="submit" value="Submit">
+<input type="reset" value="Reset"> <br/>
+
+</form>
+</body>
+</html>
